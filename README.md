@@ -11,7 +11,7 @@ Learnings from 2020: https://github.com/atgreen/advent-of-code-2020/blob/main/RE
 
 Here are some of my personal learnings from 2021.
 
-* Always remember that Common Lisp as three languages: Lisp, `loop`
+* Always remember that Common Lisp is three languages: Lisp, `loop`
   and `format`.  `loop` and `format` incredibly versatile -- use them.
 * I have never used the `on` mechanism in loop before.
   [01.lisp](https://github.com/atgreen/advent-of-code-2021/blob/main/01.lisp)
