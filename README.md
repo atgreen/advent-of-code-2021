@@ -7,12 +7,7 @@ https://adventofcode/2021
 Learnings
 ---------
 
-<<<<<<< HEAD
-* Always remember that Common Lisp has three languages: Lisp, Loop and
-  Format.  Loop and Format incredibly versatile -- use them.
-=======
 Learnings from 2020: https://github.com/atgreen/advent-of-code-2020/blob/main/README.md
->>>>>>> fc8840f (Clean up)
 
 Here are some of my personal learnings from 2021.
 
