@@ -27,3 +27,8 @@
           0))))
 
 (print (up-count-window +numbers+))
+
+;; POSTMORTEM:
+;; I used recursion, however I like this answer better:
+;;  https://github.com/henrybw/advent-of-code-2021/blob/main/day1.lisp
+;; It's a reminder that Common Lisp is three languages: Lisp, Loop and Format.
