@@ -13,7 +13,7 @@ Here are some of my personal learnings from 2021.
 
 * Always remember that Common Lisp is three languages: Lisp, `loop`
   and `format`.  `loop` and `format` incredibly versatile -- use them.
-* I have never used the `on` mechanism in loop before.
+* I have never used the `on` mechanism in `loop` before.
   [01.lisp](https://github.com/atgreen/advent-of-code-2021/blob/main/01.lisp)
   shows how it can be useful.
 
