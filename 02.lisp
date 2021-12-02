@@ -21,7 +21,6 @@
              (y 0)
              (aim 0))
          (mapc (lambda (line)
-                 (format t "(~A, ~A, ~A)~%" x y aim)
                  (let ((movement (parseq:parseq 'move line)))
                    (setf aim (+ aim (cadr movement)))
                    (setf x (+ x (car movement)))
