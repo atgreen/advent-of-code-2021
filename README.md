@@ -16,5 +16,6 @@ Here are some of my personal learnings from 2021.
 * I have never used the `on` mechanism in `loop` before.
   [01.lisp](https://github.com/atgreen/advent-of-code-2021/blob/main/01.lisp)
   shows how it can be useful.
+* `uiop:split-string` can replace `split-sequence:split-sequence`.
 
 Anthony Green <green@redhat.com>
