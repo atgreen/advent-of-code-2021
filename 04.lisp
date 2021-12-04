@@ -4,7 +4,7 @@
 (ql:quickload :str)
 
 (let* ((scores (list))
-       (input (uiop:read-file-lines "~/git/advent-of-code-2021/04.input"))
+       (input (uiop:read-file-lines "04.input"))
        (boards (mapcar #'parse-integer
                        (remove "" (split-sequence:split-sequence
                                    #\Space
