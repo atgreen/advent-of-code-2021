@@ -1,7 +1,7 @@
 ;;; Advent Of Code 2021 - Day 6 - Anthony Green <green@moxielogic.com>
 
 (flet ((model-fish-population (days)
-         (let* ((ages (make-array 9)))
+         (let ((ages (make-array 9)))
            (dolist (age-string (uiop:split-string (car (uiop:read-file-lines "06.input")) :separator ","))
              (incf (aref ages (parse-integer age-string))))
            (dotimes (day days)
