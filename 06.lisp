@@ -7,6 +7,6 @@
            (dotimes (day days)
              (incf (aref ages 7) (aref ages 0))
              (rotatef (aref ages 0) (aref ages 1) (aref ages 2) (aref ages 3) (aref ages 4) (aref ages 5) (aref ages 6) (aref ages 7) (aref ages 8)))
-           (loop for i from 0 to 8 sum (aref ages i)))))
+           (reduce #'+ ages))))
   (print (model-fish-population 80))
   (print (model-fish-population 256)))
