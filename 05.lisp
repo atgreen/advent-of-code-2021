@@ -1,3 +1,5 @@
+;;; Advent Of Code 2021 - Day 5 - Anthony Green <green@moxielogic.com>
+
 (ql:quickload :parseq)
 
 (defvar *diagonal*)
