@@ -6,7 +6,7 @@
          (mapc (lambda (line)
                  (dolist (digit (subseq (uiop:split-string line :separator " ") 11))
                    (incf (aref counts (length digit)))))
-               (uiop:read-file-lines "~/git/advent-of-code-2021/08.input"))
+               (uiop:read-file-lines "08.input"))
          (+ (aref counts 2) (aref counts 4) (aref counts 3) (aref counts 7))))
 
 (print
@@ -71,4 +71,4 @@
                    (* 10 (gethash (sort (nth 13 line) #'char-lessp) numbers))
                    (* 1 (gethash (sort (nth 14 line) #'char-lessp) numbers))))))
 
-          (uiop:read-file-lines "~/git/advent-of-code-2021/08.input"))))
+          (uiop:read-file-lines "08.input"))))
