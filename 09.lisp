@@ -1,9 +1,9 @@
 (let ((lows nil)
       (low-points nil)
-      (prev-line "999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999")
+      (prev-line (format nil "~v@{~A~:*~}" 102 "9"))
       (prev-lows nil)
       (y -1))
-  (dolist (line (append (uiop:read-file-lines "git/advent-of-code-2021/09.input")
+  (dolist (line (append (uiop:read-file-lines "09.input")
                         (list (subseq prev-line 2))))
     (let* ((line (concatenate 'string "9" line "9")))
       (loop for p in prev-lows
@@ -24,7 +24,7 @@
 
   ; Part 2
   (let ((map ""))
-    (dolist (line (uiop:read-file-lines "git/advent-of-code-2021/09.input"))
+    (dolist (line (uiop:read-file-lines "09.input"))
       (setf map (concatenate 'string map line)))
     (labels ((basin-search (x y)
                (let ((c (aref map (+ (* y 100) x))))
