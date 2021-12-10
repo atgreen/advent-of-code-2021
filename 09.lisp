@@ -1,3 +1,5 @@
+;;; Advent Of Code 2021 - Day 8 - Anthony Green <green@moxielogic.com>
+
 (let ((lows nil)
       (low-points nil)
       (prev-line (format nil "~v@{~A~:*~}" 102 "9"))
