@@ -1,3 +1,5 @@
+;;; Advent Of Code 2021 - Day 13 - Anthony Green <green@moxielogic.com>
+
 (let ((map (make-hash-table :test #'equal))
       (last-x)
       (last-y))
