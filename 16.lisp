@@ -1,5 +1,7 @@
 ;;; Advent Of Code 2021 - Day 16 - Anthony Green <green@moxielogic.com>
 
+(ql:quickload :alexandria)
+
 (let* ((hex (car (uiop:read-file-lines "16.input")))
        (versions (list))
        (bits (alexandria:flatten
