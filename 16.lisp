@@ -18,8 +18,8 @@
                (if (eq type-id 4)
                    (loop with v = 0
                          until (eq (read-bits 1) 0)
-                         do (setf v (+ (* v 2) (read-bits 4)))
-                         finally (return (+ (* v 2) (read-bits 4))))
+                         do (setf v (+ (* v 16) (read-bits 4)))
+                         finally (return (+ (* v 16) (read-bits 4))))
                    (let ((operands (let ((length-type-id (read-bits 1)))
                                      (if (eq length-type-id 0)
                                          (let ((sub-packet-length (read-bits 15)))
